@@ -122,9 +122,9 @@ NAN_METHOD(ConvertHLSLString) {
   Nan::Utf8String inputShader(info[0]);
 
   bool optimize = true;
-  if (info.Length() > 1 && info[1]->IsBoolean()) {
-    optimize = info[1]->BooleanValue();
-  }
+  // if (info.Length() > 1 && info[1]->IsBoolean()) {
+  //  optimize = info[1]->BooleanValue();
+  // }
 
   try {
       Hlsl2Glsl_Initialize ();
